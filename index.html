@@ -57,18 +57,20 @@
 
         <div
             id="gameBoard"
-            class="bg-white bg-opacity-30 rounded-lg flex flex-wrap justify-center items-center gap-2 md:gap-4 p-4 hidden"
+            class="hidden"
         ></div>
 
         <!-- End Game Display -->
 
         <div
             id="endGame"
-            class="flex flex-col items-center justify-center gap-2 hidden"
+            class="flex flex-col items-center justify-center gap-2 text-white hidden"
         >
             <h2 class="font-bold text-4xl p-4 text-center">Victoire !</h2>
             <h3 class="font-bold text-2xl p-4 text-center">
                 Vous avez trouvé toutes les paires !
+            </h3>
+            <h3 id="moves" class="font-bold text-2xl p-4 text-center">
             </h3>
             <button
                 id="replayBtn"
