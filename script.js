@@ -28,7 +28,7 @@ const cardDeck = [
     "voleuse.jpg",
     "guerrier-mage.jpg",
     "dompteuse.jpg",
-    "illusionist.jpg",
+    "illusioniste.jpg",
 ];
 
 let cardDeckCopy;
