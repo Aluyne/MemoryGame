@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Memory Game</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body
+        class="bg-img bg-cover bg-center w-full h-screen flex items-center justify-center h-screen"
+    >
+        <!-- Start Display -->
+
+        <div id="game" class="flex flex-col items-center">
+            <h1
+                class="flex items-center text-5xl font-extrabold text-center mb-14 text-white"
+            >
+                Fantasy Memory Game
+            </h1>
+            <div class="flex flex-col gap-4">
+                <button
+                    id="startGame"
+                    class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"
+                >
+                    Jouer
+                </button>
+
+                <button
+                    id="easyBtn"
+                    type="button"
+                    class="bg-gray-300 bg-green-400 text-gray-800 font-bold py-2 px-4 rounded"
+                >
+                    Facile
+                </button>
+                <button
+                    id="mediumBtn"
+                    type="button"
+                    class="bg-gray-300 hover:bg-green-400 text-gray-800 font-bold py-2 px-4 rounded"
+                >
+                    Moyen
+                </button>
+                <button
+                    id="hardBtn"
+                    type="button"
+                    class="bg-gray-300 hover:bg-green-400 text-gray-800 font-bold py-2 px-4 rounded"
+                >
+                    Difficile
+                </button>
+            </div>
+        </div>
+
+        <!-- Game Display -->
+
+        <div
+            id="gameBoard"
+            class="bg-white bg-opacity-30 rounded-lg flex flex-wrap justify-center items-center gap-2 md:gap-4 p-4 hidden"
+        ></div>
+
+        <!-- End Game Display -->
+
+        <div
+            id="endGame"
+            class="flex flex-col items-center justify-center gap-2 hidden"
+        >
+            <h2 class="font-bold text-4xl p-4 text-center">Victoire !</h2>
+            <h3 class="font-bold text-2xl p-4 text-center">
+                Vous avez trouvé toutes les paires !
+            </h3>
+            <button
+                id="replayBtn"
+                class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"
+            >
+                Rejouer
+            </button>
+            <button
+                id="backToStart"
+                class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"
+            >
+                Retour
+            </button>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
